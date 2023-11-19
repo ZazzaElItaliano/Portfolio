@@ -1,0 +1,55 @@
+body{
+   background-color: black !important;
+}
+header{
+    background-color: chartreuse;
+}
+
+.home{
+    align-items: center;
+    background-image: url(fotos/wallpaperflare.com_wallpaper\ \(1\).svg); 
+    background-position: top;
+    background-size: cover;
+    display: flex;
+    height: 80vh;
+    justify-content: space-between;
+    padding: 8rem 5rem 0;
+}
+
+ .presentacion {
+    display: inline-block;
+    background: rgba(20,233,88,.157);
+    border-radius: 12px;
+    color: #14e956;
+    font-size: 1.8rem;
+    font-weight: 900;
+    letter-spacing: .05em;
+    margin: 0;
+    padding: 0.5rem 1rem;
+    text-transform: capitalize;
+}
+
+.texto{
+    padding-top: 2.5rem;
+    color: #14e956;
+}
+.descripcion{
+    padding-top: 1.5rem;
+    color: rgb(155, 151, 151);
+}
+
+.tecnologia{
+    align-items: center;
+    background: #12141d;
+    border-radius: 12px;
+    -webkit-box-shadow: inset 0 0 4px 1px #14e956;
+    -moz-box-shadow: inset 0 0 4px 1px #14e956;
+  
+    color: #14e956;
+    margin-bottom: 5rem;
+    padding: 0.8rem 2rem;
+}
+
+.espaciado{
+    margin-top: 3%;
+}
