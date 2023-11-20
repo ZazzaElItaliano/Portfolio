@@ -1,5 +1,5 @@
 body{
-   background-color: black !important;
+   background-color: rgb(24, 22, 22) !important;
 }
 header{
     background-color: chartreuse;
@@ -81,4 +81,10 @@ header{
 .hueco p{
   
     padding: 1.5%;
+}
+
+.iconito{
+    background-image:url(fotos/manita.png);
+    width: 80px; /* Ancho deseado */
+    height: 40px;
 }
