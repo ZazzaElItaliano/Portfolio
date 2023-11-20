@@ -83,8 +83,14 @@ header{
     padding: 1.5%;
 }
 
-.iconito{
+.iconito-retrasar{
     background-image:url(fotos/manita.png);
-    width: 80px; /* Ancho deseado */
-    height: 40px;
+    width: 60px; /* Ancho deseado */
+    height: 60px;
+}
+
+.iconito-avanzar{
+    background-image:url(fotos/manita11.png);
+    width: 60px; /* Ancho deseado */
+    height: 60px;
 }
