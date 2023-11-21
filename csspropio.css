@@ -35,7 +35,7 @@ header{
 }
 .descripcion{
     padding-top: 1.5rem;
-    color: rgb(155, 151, 151);
+    color: rgb(196, 185, 185);
 }
 
 .tecnologia{
@@ -62,7 +62,7 @@ header{
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 0.5rem;
-    width: 50%;
+    width: 100%;
 }
 
  .hueco {
@@ -94,3 +94,19 @@ header{
     width: 60px; /* Ancho deseado */
     height: 60px;
 }
+
+.imagen-fondo {
+    position: relative;
+    background-image: url(fotos/ping.png);
+    filter: blur(2px);
+    z-index: -1;
+  }
+  
+  .imagen-fondo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
