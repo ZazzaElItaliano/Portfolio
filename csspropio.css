@@ -230,7 +230,7 @@ footer .contacto .contacto-cuerpo .github-caja {
     position: relative;
     width: 25%;
 }
-footer .contacto .contacto-cuerpo.github-caja p {
+footer .contacto .contacto-cuerpo .github-caja p {
     font-size: 3.5rem;
     font-weight: 600;
     margin: 0;
