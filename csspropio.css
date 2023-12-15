@@ -109,4 +109,266 @@ header{
     width: 100%;
     height: 100%;
   }
+
+  .caja-frase {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10rem;
+    margin-top: 10rem;
+    position: relative;
+}
+.espacio{
+    margin-top: 23px;
+}
+.caja-frase .caja-cuerpo {
+    align-content: center;
+    align-items: center;
+    background-color: transparent;
+    background-image: url(fotos/fotoPortfolio.png);
+    background-size: cover;
+    background-color: aquamarine;
+    background-position: center;
+    border-radius: 15px;
+    box-shadow: 0 0 1px 3px rgba(20, 233, 86, .98);
+    -webkit-box-shadow: 0 0 1px 3px rgba(20, 233, 86, .98);
+    -moz-box-shadow: 0 0 1px 3px rgba(20, 233, 86, .98);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Cambiado para simplificar */
+    grid-template-rows: repeat(4, 1fr); /* Cambiado para simplificar */
+    height: 200px;
+    justify-items: center;
+    position: relative;
+    width: 60%;
+    z-index: 10;
+}
+.caja-frase .caja-cuerpo::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.743); /* Ajusta el valor alpha para controlar la opacidad */
+    border-radius: 15px;
+}
+/* Elimina los márgenes por defecto del párrafo */
+.caja-frase .caja-cuerpo .caja-contenido p {
+    font-size: 2.5rem;
+    font-weight: 900;
+    padding-top: 7%;
+    color: #1aff00;
+    margin: 0;
+    opacity: .8;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+/* Asegúrate de que el párrafo esté centrado verticalmente */
+.caja-frase .caja-cuerpo .caja-contenido {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: span 4; /* Hace que ocupe las 4 columnas */
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+footer {
+    margin: 0;
+    width: 100%;
+    display: block;
+
+}
+footer .contacto {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 5rem;
+    padding: 0;
+    width: 100%;
+}
+footer .contacto .contacto-titulo {
+    align-self: center;
+    margin-bottom: 4.5rem;
+
+    transform: rotate(3.6deg);
+}
+footer .contacto .contacto-titulo h2 {
+    color: #14e956;
+ 
+    font-size: 3rem;
+    font-weight: 900;
+    margin: 0;
+    opacity: .9;
+    text-shadow: 3px 3px 0 ;
+    text-transform: uppercase;
+}
+footer .contacto .contacto-cuerpo {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+footer .contacto .contacto-cuerpo .github-caja {
+    align-items: center;
+    background: #333;
+    color: #d6d6d6;
+    cursor: pointer;
+    display: flex;
+    height: 9rem;
+    justify-content: space-between;
+    padding: 0 1.5rem;
+    position: relative;
+    width: 25%;
+}
+footer .contacto .contacto-cuerpo.github-caja p {
+    font-size: 3.5rem;
+    font-weight: 600;
+    margin: 0;
+}
+footer .contacto .contacto-cuerpo .linkedin-caja {
+    align-items: center;
+    background: #1235e3;
+    color: #cce4f0;
+    cursor: pointer;
+    display: flex;
+    height: 9rem;
+    justify-content: space-between;
+    padding: 0 1.5rem;
+    width: 25%;
+}
+footer .contacto .contacto-cuerpo .linkedin-caja p {
+    font-size: 3.5rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+footer .contacto .contacto-cuerpo .twitter-caja {
+    align-items: center;
+    background: #1da1f2;
+    color: #d2ecfc;
+    cursor: pointer;
+    display: flex;
+    height: 9rem;
+    justify-content: space-between;
+    padding: 0 1.5rem;
+    width: 25%;
+}
+footer .contacto .contacto-cuerpo .twitter-caja p {
+    font-size: 3.5rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+footer .contacto .contacto-cuerpo .instagram-caja {
+    align-items: center;
+    background: #7a2466;
+    color: #cce2ff;
+    cursor: pointer;
+    display: flex;
+    height: 9rem;
+    justify-content: space-between;
+    padding: 0 1.5rem;
+    width: 25%;
+}
+footer .contacto .contacto-cuerpo .instagram-caja p {
+    font-size: 3.5rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+footer .contacto .email {
+    align-items: center;
+    background: #10ba46;
+    cursor: pointer;
+    display: flex;
+    height: 4rem;
+    justify-content: center;
+    width: 100%;
+}
+
+footer .contacto .email .envoltorio {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    width: 23%;
+}
+
+footer .contacto .email .envoltorio p {
+    color: #d0fbdd;
+
+    font-weight: 900;
+    margin: 0 0 -0.3rem;
+    text-transform: uppercase;
+}
+
+@media (min-width: 1025px) and (max-width: 1300px){
+footer .contacto .contacto-titulo{
+    margin-bottom: 4.3rem;
+}
+}
+
+@media (max-width: 767px) {
+    .home {
+        padding: 8rem 1rem 0; /* Adjusted padding for smaller screens */
+    }
   
+    .texto {
+        font-size: 1.5rem; /* Adjusted font size for smaller screens */
+    }
+
+    .descripcion {
+        font-size: 1rem; /* Adjusted font size for smaller screens */
+    }
+  }
+  
+
+  /* Add media query for smaller screens */
+  @media (max-width: 767px) {
+    .hueco {
+        flex: 0 1 45%; /* Adjusted width for smaller screens */
+    }
+  }
+  
+  /* Add media query for smaller screens */
+  @media (max-width: 767px) {
+    footer .contacto .contacto-cuerpo {
+        flex-direction: column; /* Cambiar la dirección de la fila a columna */
+        align-items: center; /* Centrar elementos */
+    }
+
+    footer .contacto .contacto-cuerpo > * {
+        width: 100%; /* Ocupar todo el ancho disponible */
+        margin-bottom: 1rem; /* Añadir margen inferior entre elementos */
+    }
+
+    footer .contacto .contacto-cuerpo .github-caja,
+    footer .contacto .contacto-cuerpo .linkedin-caja,
+    footer .contacto .contacto-cuerpo .twitter-caja,
+    footer .contacto .contacto-cuerpo .instagram-caja {
+        width: 100%; /* Ocupar todo el ancho disponible */
+        margin-bottom: 1rem; /* Añadir margen inferior entre elementos */
+    }
+
+    footer .contacto .contacto-cuerpo .envoltorio p {
+        font-size: 1.5rem; /* Ajustar el tamaño de la fuente para pantallas pequeñas */
+    }
+}
+
+
+  @media (max-width: 767px) {
+    .caja-frase.caja-cuerpo.caja-contenido p {
+        font-size: 1.5rem; /* Ajustar el tamaño de la fuente para pantallas pequeñas */
+        padding-top: 5%; /* Ajustar el espacio superior */
+    }
+}
